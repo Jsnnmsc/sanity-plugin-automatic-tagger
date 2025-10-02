@@ -100,17 +100,19 @@ export const articleType = defineType({
       type: 'text', // or 'markdown', 'array', etc.
     }),
     defineField({
-      name: 'tags',
-      title: 'SEO Tags',
+      name: 'tag',
+      title: 'Tag',
       type: 'array',
       of: [{type: 'string'}],
       components: {
-        input: SeoTagger as any, // Using 'as any' to avoid type conflicts
+        input: SeoTagger,
       },
     }),
   ],
 })
 ```
+
+**For a complete example**, see [src/schemas/article.ts](src/schemas/article.ts) which demonstrates integration with other article fields like thumbnail, title, slug, excerpt, category, and markdown content.
 
 ### Generating Tags
 
