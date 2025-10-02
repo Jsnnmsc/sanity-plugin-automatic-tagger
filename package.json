@@ -1,6 +1,6 @@
 {
   "name": "sanity-plugin-automatic-tagger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Sanity Studio v3 plugin that automatically generates SEO keywords and tags for article content using AI-powered analysis via OpenRouter API",
   "keywords": [
     "sanity",
